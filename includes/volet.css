@@ -1,0 +1,194 @@
+/*#volet 
+{
+    width: 23%;
+    padding: 1%;
+    background: #6B9A49;
+    text-align: left;
+    color: #fff;
+    position: relative;
+    top: -155px; 
+    right: 55px;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}*/
+
+#volet
+{
+	position: absolute;
+	width: 170px;
+    top: -177px;
+	margin: auto;
+	right: 0;
+	padding: 10px;
+	height: 155px;
+    color: #324040;
+    text-align: center;
+   /* background: #04b3d2;*/
+    background: dodgerblue;
+	background: linear-gradient(dodgerblue, deepskyblue);
+	background: -webkit-linear-gradient(dodgerblue, deepskyblue);
+	background: -moz-linear-gradient(dodgerblue, deepskyblue);
+	background: -ms-linear-gradient(dodgerblue, deepskyblue);
+	background: -o-linear-gradient(dodgerblue, deepskyblue);
+
+    /*border-radius*/
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+    /*box-shadow*/
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                        0 3px 5px rgba(0, 0, 0, .2),
+                        0 5px 10px rgba(0, 0, 0, .2),
+                        0 20px 20px rgba(0, 0, 0, .15),
+                        0 -1px 0 hsl(210, 100%, 32%) inset, 
+                        0 -1px 0 hsl(210, 100%, 38%) inset, 
+                        0 -1px 0 hsl(210, 100%, 44%) inset, 
+                        0 -1px 0 hsl(210, 100%, 50%) inset, 
+                        0 -1px 0 hsl(210, 100%, 60%) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                        0 3px 5px rgba(0, 0, 0, .2),
+                        0 5px 10px rgba(0, 0, 0, .2),
+                        0 20px 20px rgba(0, 0, 0, .15),
+                        0 1px 0 hsl(210, 100%, 32%) inset,
+                        0 -1px 0 hsl(210, 100%, 32%) inset, 
+                        0 -2px 0 hsl(210, 100%, 38%) inset, 
+                        0 -3px 0 hsl(210, 100%, 44%) inset, 
+                        0 -4px 0 hsl(210, 100%, 50%) inset, 
+                        0 -5px 0 hsl(210, 100%, 60%) inset;
+    -o-box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                    0 3px 5px rgba(0, 0, 0, .2),
+                    0 5px 10px rgba(0, 0, 0, .2),
+                    0 20px 20px rgba(0, 0, 0, .15),
+                    0 1px 0 hsl(210, 100%, 32%) inset,
+                    0 -1px 0 hsl(210, 100%, 32%) inset, 
+                    0 -2px 0 hsl(210, 100%, 38%) inset, 
+                    0 -3px 0 hsl(210, 100%, 44%) inset, 
+                    0 -4px 0 hsl(210, 100%, 50%) inset, 
+                    0 -5px 0 hsl(210, 100%, 60%) inset;
+    -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                    0 3px 5px rgba(0, 0, 0, .2),
+                    0 5px 10px rgba(0, 0, 0, .2),
+                    0 20px 20px rgba(0, 0, 0, .15),
+                    0 1px 0 hsl(210, 100%, 32%) inset,
+                    0 -1px 0 hsl(210, 100%, 32%) inset, 
+                    0 -2px 0 hsl(210, 100%, 38%) inset, 
+                    0 -3px 0 hsl(210, 100%, 44%) inset, 
+                    0 -4px 0 hsl(210, 100%, 50%) inset, 
+                    0 -5px 0 hsl(210, 100%, 60%) inset;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                0 3px 5px rgba(0, 0, 0, .2),
+                0 5px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15),
+                0 -1px 0 hsl(210, 100%, 32%) inset, 
+                0 -1px 0 hsl(210, 100%, 38%) inset, 
+                0 -1px 0 hsl(210, 100%, 44%) inset, 
+                0 -1px 0 hsl(210, 100%, 50%) inset, 
+                0 -1px 0 hsl(210, 100%, 60%) inset;
+}
+
+#volet a.ouvrir, #volet a.fermer
+{
+	padding: 10px 25px;
+	background: dodgerblue;
+    color: rgba(0, 0, 0, .7);
+    text-decoration: none;
+    position: absolute;
+    width: 140px;
+    right: 0px;
+    top: 170px;
+
+    background: linear-gradient(deepskyblue, dodgerblue);
+	background: -webkit-linear-gradient(deepskyblue, dodgerblue);
+	background: -moz-linear-gradient(deepskyblue, dodgerblue);
+	background: -ms-linear-gradient(deepskyblue, dodgerblue);
+	background: -o-linear-gradient(deepskyblue, dodgerblue);
+    
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -moz-border-radius: 0 0 8px 8px;
+    -webkit-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                        0 3px 5px rgba(0, 0, 0, .2),
+                        0 5px 10px rgba(0, 0, 0, .2),
+                        0 20px 20px rgba(0, 0, 0, .15),
+                      
+                        0 -1px 0 hsl(210, 100%, 32%) inset, 
+                        0 -2px 0 hsl(210, 100%, 38%) inset, 
+                        0 -3px 0 hsl(210, 100%, 44%) inset, 
+                        0 -4px 0 hsl(210, 100%, 50%) inset, 
+                        0 -5px 0 hsl(210, 100%, 60%) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                        0 3px 5px rgba(0, 0, 0, .2),
+                        0 5px 10px rgba(0, 0, 0, .2),
+                        0 20px 20px rgba(0, 0, 0, .15),
+                        0 1px 0 hsl(210, 100%, 32%) inset,
+                        0 -1px 0 hsl(210, 100%, 32%) inset, 
+                        0 -2px 0 hsl(210, 100%, 38%) inset, 
+                        0 -3px 0 hsl(210, 100%, 44%) inset, 
+                        0 -4px 0 hsl(210, 100%, 50%) inset, 
+                        0 -5px 0 hsl(210, 100%, 60%) inset;
+    -o-box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                    0 3px 5px rgba(0, 0, 0, .2),
+                    0 5px 10px rgba(0, 0, 0, .2),
+                    0 20px 20px rgba(0, 0, 0, .15),
+                    0 1px 0 hsl(210, 100%, 32%) inset,
+                    0 -1px 0 hsl(210, 100%, 32%) inset, 
+                    0 -2px 0 hsl(210, 100%, 38%) inset, 
+                    0 -3px 0 hsl(210, 100%, 44%) inset, 
+                    0 -4px 0 hsl(210, 100%, 50%) inset, 
+                    0 -5px 0 hsl(210, 100%, 60%) inset;
+    -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                    0 3px 5px rgba(0, 0, 0, .2),
+                    0 5px 10px rgba(0, 0, 0, .2),
+                    0 20px 20px rgba(0, 0, 0, .15),
+                    0 1px 0 hsl(210, 100%, 32%) inset,
+                    0 -1px 0 hsl(210, 100%, 32%) inset, 
+                    0 -2px 0 hsl(210, 100%, 38%) inset, 
+                    0 -3px 0 hsl(210, 100%, 44%) inset, 
+                    0 -4px 0 hsl(210, 100%, 50%) inset, 
+                    0 -5px 0 hsl(210, 100%, 60%) inset;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                0 3px 5px rgba(0, 0, 0, .2),
+                0 5px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15),
+                0 -1px 0 hsl(210, 100%, 32%) inset, 
+                0 -2px 0 hsl(210, 100%, 38%) inset, 
+                0 -3px 0 hsl(210, 100%, 44%) inset, 
+                0 -4px 0 hsl(210, 100%, 50%) inset, 
+                0 -5px 0 hsl(210, 100%, 60%) inset;
+
+}
+
+#volet a.fermer
+{
+	display: none;
+}
+
+#volet:target 
+{
+    top: 0;
+}
+
+#volet:target a.ouvrir
+{
+	display: none;
+}
+
+#volet:target a.fermer
+{
+	display: block;
+}
+
+#volet_clos:target #volet 
+{
+    top: -177px;
+}

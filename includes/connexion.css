@@ -1,0 +1,299 @@
+/* CSS3 rotating menu
+   ==================================================
+   ================================================== */
+
+/*body 
+{
+    height: 360px;
+    font-family: "helvetica",sans-serif;
+    font-size: .9em;
+    background: #627878;
+    margin: 0px;
+    padding: 0px;
+}*/
+
+#connexion 
+{
+	position: relative;
+	width: 300px;
+	margin: 0px auto;
+    margin-top: 50px;
+    height: 360px;
+    font-family: "helvetica",sans-serif;
+    font-size: .9em;
+    background: #627878;
+    padding: 0px;
+}
+	
+#connexion dl 
+{
+    position: relative;
+	width: 170px;
+    top: 20px;
+	margin: 0 auto;
+	height: 155px;
+    color: #324040;
+    text-align: center;
+    background: #04b3d2;
+    /*linear-gradient*/
+    /*background: -webkit-gradient(linear,left top,left bottom,from(#04b3d2),to(#48dfff));
+    background: -webkit-linear-gradient(top,#04b3d2,#48dfff);
+    background: -moz-linear-gradient(top,#04b3d2,#48dfff);
+    background: -o-linear-gradient(top,#04b3d2,#48dfff);
+    background: linear-gradient(top,#04b3d2,#48dfff);*/
+    background: dodgerblue; /* Pour les navigateurs qui ne reconnaissent pas le dégradé */
+    /*border-radius*/
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    /*box-shadow*/
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                        0 3px 5px rgba(0, 0, 0, .2),
+                        0 5px 10px rgba(0, 0, 0, .2),
+                        0 20px 20px rgba(0, 0, 0, .15),
+                        0 1px 0 hsl(210, 100%, 32%) inset,
+                        0 -1px 0 hsl(210, 100%, 32%) inset, 
+                        0 -2px 0 hsl(210, 100%, 38%) inset, 
+                        0 -3px 0 hsl(210, 100%, 44%) inset, 
+                        0 -4px 0 hsl(210, 100%, 50%) inset, 
+                        0 -5px 0 hsl(210, 100%, 60%) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                        0 3px 5px rgba(0, 0, 0, .2),
+                        0 5px 10px rgba(0, 0, 0, .2),
+                        0 20px 20px rgba(0, 0, 0, .15),
+                        0 1px 0 hsl(210, 100%, 32%) inset,
+                        0 -1px 0 hsl(210, 100%, 32%) inset, 
+                        0 -2px 0 hsl(210, 100%, 38%) inset, 
+                        0 -3px 0 hsl(210, 100%, 44%) inset, 
+                        0 -4px 0 hsl(210, 100%, 50%) inset, 
+                        0 -5px 0 hsl(210, 100%, 60%) inset;
+    -o-box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                    0 3px 5px rgba(0, 0, 0, .2),
+                    0 5px 10px rgba(0, 0, 0, .2),
+                    0 20px 20px rgba(0, 0, 0, .15),
+                    0 1px 0 hsl(210, 100%, 32%) inset,
+                    0 -1px 0 hsl(210, 100%, 32%) inset, 
+                    0 -2px 0 hsl(210, 100%, 38%) inset, 
+                    0 -3px 0 hsl(210, 100%, 44%) inset, 
+                    0 -4px 0 hsl(210, 100%, 50%) inset, 
+                    0 -5px 0 hsl(210, 100%, 60%) inset;
+    -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                    0 3px 5px rgba(0, 0, 0, .2),
+                    0 5px 10px rgba(0, 0, 0, .2),
+                    0 20px 20px rgba(0, 0, 0, .15),
+                    0 1px 0 hsl(210, 100%, 32%) inset,
+                    0 -1px 0 hsl(210, 100%, 32%) inset, 
+                    0 -2px 0 hsl(210, 100%, 38%) inset, 
+                    0 -3px 0 hsl(210, 100%, 44%) inset, 
+                    0 -4px 0 hsl(210, 100%, 50%) inset, 
+                    0 -5px 0 hsl(210, 100%, 60%) inset;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                0 3px 5px rgba(0, 0, 0, .2),
+                0 5px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15),
+                0 1px 0 hsl(210, 100%, 32%) inset,
+                0 -1px 0 hsl(210, 100%, 32%) inset, 
+                0 -2px 0 hsl(210, 100%, 38%) inset, 
+                0 -3px 0 hsl(210, 100%, 44%) inset, 
+                0 -4px 0 hsl(210, 100%, 50%) inset, 
+                0 -5px 0 hsl(210, 100%, 60%) inset;
+    /*transform-origin*/
+    -webkit-transform-origin: 50% 120px;
+    -moz-transform-origin: 50% 120px;
+    -ms-transform-origin: 50% 120px;
+    -o-transform-origin: 50% 120px;
+    transform-origin: 50% 120px;
+    /*transition*/
+    -webkit-transition: -webkit-transform 0.7s ease-in-out;
+    -moz-transition: -moz-transform 0.7s ease-in-out;
+    -o-transition: -o-transform 0.7s ease-in-out;
+    transition: transform 0.7s ease-in-out;
+    /*webkit plus*/
+    /*animation*/
+    -webkit-animation: bounceOut 0.7s ease-in-out;
+    -moz-animation: bounceOut 0.7s ease-in-out;
+    -ms-animation: bounceOut 0.7s ease-in-out;
+    -o-animation: bounceOut 0.7s ease-in-out;
+    animation: bounceOut 0.7s ease-in-out;
+}
+
+#connexion dt 
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+}
+
+#connexion dd 
+{
+    /*transform*/
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    padding-bottom: 3px;
+    margin: auto;
+}
+
+#connexion dd label
+{
+    font-size: .8em;
+}
+
+/* Effet sur les liens, pas de liens ici
+#connexion dd a 
+{
+    display: block;
+    height: 24px;
+    padding: 3px 20px;
+    color: #324040;
+    text-decoration: none;
+}
+
+#connexion dd a:hover 
+{ 
+    background: rgba(255,255,255,0.1) 
+}
+*/
+
+#connexion dl:hover 
+{
+    /*transform*/
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    /*transition*/
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    -moz-transition: -moz-transform 0.5s ease-in-out;
+    -o-transition: -o-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    /*webkit plus*/
+    /*animation*/
+    -webkit-animation: bounceIn 0.7s ease-in-out;
+    -moz-animation: bounceIn 0.7s ease-in-out;
+    -ms-animation: bounceIn 0.7s ease-in-out;
+    -o-animation: bounceIn 0.7s ease-in-out;
+    animation: bounceIn 0.7s ease-in-out;
+}
+
+@-webkit-keyframes bounceIn 
+{ 
+    from { -webkit-transform: rotate(0deg) }
+
+    75% { -webkit-transform: rotate(-200deg) }
+
+    90% { -webkit-transform: rotate(-175deg) }
+
+    to { -webkit-transform: rotate(-180deg) }
+}
+
+@-moz-keyframes bounceIn 
+{ 
+    from { -webkit-transform: rotate(0deg) }
+
+    75% { -webkit-transform: rotate(-200deg) }
+
+    90% { -webkit-transform: rotate(-175deg) }
+
+    to { -webkit-transform: rotate(-180deg) }
+}
+
+@-o-keyframes bounceIn 
+{ 
+    from { -webkit-transform: rotate(0deg) }
+
+    75% { -webkit-transform: rotate(-200deg) }
+
+    90% { -webkit-transform: rotate(-175deg) }
+
+    to { -webkit-transform: rotate(-180deg) }
+}
+
+@-ms-keyframes bounceIn 
+{ 
+    from { -webkit-transform: rotate(0deg) }
+
+    75% { -webkit-transform: rotate(-200deg) }
+
+    90% { -webkit-transform: rotate(-175deg) }
+
+    to { -webkit-transform: rotate(-180deg) }
+}
+
+@-webkit-keyframes bounceOut 
+{ 
+    from { -webkit-transform: rotate(-360deg) }
+
+    0% { -webkit-transform: rotate(-180deg) }
+
+    10% { -webkit-transform: rotate(-160deg) }
+
+    to { -webkit-transform: rotate(-360deg) }
+}
+
+@-moz-keyframes bounceOut 
+{ 
+    from { -webkit-transform: rotate(-360deg) }
+
+    0% { -webkit-transform: rotate(-180deg) }
+
+    10% { -webkit-transform: rotate(-160deg) }
+
+    to { -webkit-transform: rotate(-360deg) }
+}
+
+@-o-keyframes bounceOut 
+{ 
+    from { -webkit-transform: rotate(-360deg) }
+
+    0% { -webkit-transform: rotate(-180deg) }
+
+    10% { -webkit-transform: rotate(-160deg) }
+
+    to { -webkit-transform: rotate(-360deg) }
+}
+
+@-ms-keyframes bounceOut 
+{ 
+    from { -webkit-transform: rotate(-360deg) }
+
+    0% { -webkit-transform: rotate(-180deg) }
+
+    10% { -webkit-transform: rotate(-160deg) }
+
+    to { -webkit-transform: rotate(-360deg) }
+}
+
+#connexion .masque 
+{
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+    height: 142px;
+    top: -7px;
+    left: 0;
+    background: #627878;
+    /*linear-gradient*/
+}
+
+#connexion .ombre 
+{
+    position: relative;
+    width: 300px;
+    height: 6px;
+	top: -22px;
+    margin-top: -103px;
+    left: 0px;
+    /*box-shadow*/
+    -webkit-box-shadow: 0px 100px 3px black;
+    -moz-box-shadow: 0px 100px 3px black;
+    box-shadow: 0px 100px 3px black;
+    /*border-radius*/
+    -webkit-border-radius: 75px 75px 75px 75px / 3px 3px 3px 3px;
+    -moz-border-radius: 75px 75px 75px 75px / 3px 3px 3px 3px;
+    border-radius: 75px 75px 75px 75px / 3px 3px 3px 3px;
+}
